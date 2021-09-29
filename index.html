@@ -152,6 +152,56 @@
 .checkbox-three input[type=checkbox]:checked + label {
     left: 43px;
 }
+.checkbox-four {
+  width: 28px;
+  height: 28px;
+  margin: 20px auto;
+  box-shadow: inset 1px 1px 1px rgb(255,255,255), 
+                    1px 1px 3px rgba(0,0,0,0.7);
+  position: relative;
+  border-radius: 50px;
+  background: rgb(245,245,245);
+  background: linear-gradient(to bottom, rgb(245,245,245) 0%,
+                                         rgb(200,200,200) 40%,    
+                                         rgb(150,150,150) 100%);
+}
+.checkbox-four label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 
+                    1px 1px 1px rgb(255,255,255);
+  background: linear-gradient(to bottom, rgb(30,30,30) 0%, 
+                                         rgb(80,80,80) 100%);
+  border-radius: 50px;
+  cursor: pointer;
+}
+.checkbox-four label:after {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  box-shadow: inset 1px 1px 1px rgb(255,255,255), 
+                    3px 3px 3px rgba(0,0,0,0.7);
+  border-radius: 50px;
+  background: rgb(0,255,0);
+  background: linear-gradient(to bottom, rgb(0,255,0) 0%,
+                                         rgb(25,90,25) 100%);
+  opacity: 0;
+  content: '';
+}
+.checkbox-four label:hover::after {
+  opacity: 0.3;
+}
+.checkbox-four input[type=checkbox] {
+  visibility: hidden;
+}
+.checkbox-four input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
     </style>
 
     <section>                                               
@@ -172,6 +222,13 @@
       <div class="checkbox-three">  
         <input type="checkbox" value="None" id="checkboxthree" name="check" checked />
         <label for="checkboxthree"></label>
+      </div>
+    </section>
+
+    <section>                                                 
+      <div class="checkbox-four">
+        <input type="checkbox" value="None" id="checkboxfour" name="check" checked />
+        <label for="checkboxfour"></label>
       </div>
     </section>
 
