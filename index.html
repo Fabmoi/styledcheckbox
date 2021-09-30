@@ -202,6 +202,154 @@
 .checkbox-four input[type=checkbox]:checked + label:after {
   opacity: 1;
 }
+
+
+
+.check-box-five {
+  width: 28px;
+  height: 28px;
+  margin: 20px auto;
+  box-shadow: inset 1px 1px 1px rgb(255,255,255), 
+                    1px 1px 3px rgba(0,0,0,0.7);
+  position: relative;
+  border-radius: 50px;
+  background: rgb(245,245,245);
+  background: linear-gradient(to bottom, rgb(245,245,245) 0%, 
+                                         rgb(200,200,200) 40%, 
+                                         rgb(170,170,170) 100%);
+}
+.check-box-five label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: linear-gradient(to bottom, rgb(30,30,30) 0%, 
+                                         rgb(75,75,75) 100%);
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 
+                    0px 1px 3px rgb(255,255,255);
+  cursor: pointer;
+}
+.check-box-five label:after {
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  border: 3px solid rgb(0,255,0);
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  transform: rotate(-45deg);
+  content: '';
+}
+.check-box-five label:hover::after {
+  opacity: 0.5;
+}
+.check-box-five input[type=checkbox] {
+  visibility: hidden;
+}
+.check-box-five input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+.check-box-six {
+  width: 28px;
+  height: 28px;
+  margin: 20px auto;
+  position: relative;
+  background: rgb(245,245,245);
+  background: linear-gradient(to bottom, rgb(245,245,245) 0%, 
+                                         rgb(200,200,200) 40%, 
+                                         rgb(150,150,150) 100%);
+  box-shadow: inset 1px 1px 1px rgb(255,255,255), 
+                    1px 1px 3px rgba(0,0,0,0.7);
+}
+.check-box-six label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, rgb(255,0,0) 0%, 
+                                         rgb(170,0,0) 100%);
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 
+                    1px 1px 1px rgb(255,255,255);
+}
+.check-box-six label:after {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: rgb(39, 174, 96);
+  background: linear-gradient(to bottom, rgb(0,255,0) 0%, 
+                                         rgb(0,100,0) 100%);
+  box-shadow: inset 1px 1px 1px rgb(255,255,255), 
+                    1px 1px 3px rgba(0,0,0,0.7);
+  opacity: 0;
+  content: '';
+}
+.check-box-six label:hover::after {
+  opacity: 0.5;
+}
+.check-box-six input[type=checkbox] {
+  visibility: hidden;
+}
+.check-box-six input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+.check-box-six {
+  width: 28px;
+  height: 28px;
+  margin: 20px auto;
+  position: relative;
+  background: rgb(245,245,245);
+  background: linear-gradient(to bottom, rgb(245,245,245) 0%, 
+                                         rgb(200,200,200) 40%, 
+                                         rgb(150,150,150) 100%);
+  box-shadow: inset 1px 1px 1px rgb(255,255,255), 
+                    1px 1px 3px rgba(0,0,0,0.7);
+}
+.check-box-six label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, rgb(255,0,0) 0%, 
+                                         rgb(170,0,0) 100%);
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 
+                    1px 1px 1px rgb(255,255,255);
+}
+.check-box-six label:after {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: rgb(39, 174, 96);
+  background: linear-gradient(to bottom, rgb(0,255,0) 0%, 
+                                         rgb(0,100,0) 100%);
+  box-shadow: inset 1px 1px 1px rgb(255,255,255), 
+                    1px 1px 3px rgba(0,0,0,0.7);
+  opacity: 0;
+  content: '';
+}
+.check-box-six label:hover::after {
+  opacity: 0.5;
+}
+.check-box-six input[type=checkbox] {
+  visibility: hidden;
+}
+.check-box-six input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
     </style>
 
     <section>                                               
@@ -232,5 +380,18 @@
       </div>
     </section>
 
+    <section>                                                 
+      <div class="check-box-five">
+        <input type="checkbox" value="None" id="checkboxfive" name="check" checked />
+        <label for="checkboxfive"></label>
+      </div>
+    </section>
+
+    <section>                                                 
+      <div class="check-box-six">
+        <input type="checkbox" value="None" id="checkboxsix" name="check" checked />
+        <label for="checkboxsix"></label>
+      </div>
+    </section>
 </body>
 </html>
