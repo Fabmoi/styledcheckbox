@@ -350,6 +350,133 @@
   opacity: 1;
 }
 
+.check-box-seven {
+  width: 28px;
+  height: 28px;
+  margin: 20px auto;
+  position: relative;
+  background: rgb(245,245,245);
+  background: linear-gradient(to bottom, rgb(245,245,245) 0%, 
+                                         rgb(200,200,200) 40%, 
+                                         rgb(150,150,150) 100%);
+  box-shadow: inset 0px 1px 1px rgb(255, 255, 255), 
+                    0px 1px 3px rgba(0,0,0,0.5);
+}
+.check-box-seven label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 
+                    1px 1px 1px rgb(255,255,255);
+  background: linear-gradient(to bottom, rgb(45,45,45) 
+                                     0%, rgb(75,75,75) 100%);
+  cursor: pointer;
+}
+.check-box-seven label:after {
+  width: 9px;
+  height: 4px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  border: 3px solid rgb(0,255,0);
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  transform: rotate(-45deg);
+  content: '';
+}
+.check-box-seven label:hover::after {
+  opacity: 0.5;
+}
+.check-box-seven input[type=checkbox] {
+  visibility: hidden;
+}
+.check-box-seven input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+.check-box-eight {
+  width: 20px;
+  margin: 20px auto;
+  position: relative;
+}
+.check-box-eight label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 
+                    1px 1px 1px rgba(255,255,255,0.7);
+  border-radius: 4px;
+  background: linear-gradient(to bottom, rgb(45,45,45) 0%, 
+                                         rgb(75,75,75) 100%);
+  cursor: pointer;
+}
+.check-box-eight label:after {
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 3px solid rgb(0,255,0);
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  transform: rotate(-45deg);
+  content: '';
+}
+.check-box-eight label:hover::after {
+  opacity: 0.5;
+}
+.check-box-eight input[type=checkbox] {
+  visibility: hidden;
+}
+.check-box-eight input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+.check-box-nine {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+}
+.check-box-nine label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5);
+  background: rgb(245,245,245);
+  background: linear-gradient(to bottom, rgb(245,245,245) 0%,
+                                         rgb(200,200,200) 40%, 
+                                         rgb(150,150,150) 100%);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.check-box-nine label:after {
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 3px solid rgb(65,65,65);
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  transform: rotate(-45deg);
+  content: '';
+}
+.check-box-nine label:hover::after {
+  opacity: 0.5;
+}
+.check-box-nine input[type=checkbox] {
+  visibility: hidden;
+}
+.check-box-nine input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
     </style>
 
     <section>                                               
@@ -391,6 +518,20 @@
       <div class="check-box-six">
         <input type="checkbox" value="None" id="checkboxsix" name="check" checked />
         <label for="checkboxsix"></label>
+      </div>
+    </section>
+
+    <section>                                                 
+      <div class="check-box-seven">
+        <input type="checkbox" value="None" id="checkbowseven" name="check" checked />
+        <label for="checkbowseven"></label>
+      </div>
+    </section>
+
+    <section>                                                
+      <div class="check-box-nine">
+        <input type="checkbox" value="None" id="checkboxnine" name="check" checked />
+        <label for="checkboxnine"></label>
       </div>
     </section>
 </body>
