@@ -9,7 +9,7 @@
 <body>
     
     <style type="text/css">
-        .check-box-one {
+          .check-box-one {
             width: 50px;
             height: 10px;
             margin: 20px auto;
@@ -99,13 +99,13 @@
             background: rgb(0,255,0);
         }
         .checkbox-three {
-    position: relative;
-    width: 80px;
-    height: 26px;
-    margin: 20px auto;
-    border-radius: 50px;
-    background: rgb(75,75,75);
-    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 
+          position: relative;
+          width: 80px;
+          height: 26px;
+          margin: 20px auto;
+          border-radius: 50px;
+          background: rgb(75,75,75);
+          box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 
                       1px 1px 1px rgba(255,255,255,0.7);
 }
 .checkbox-three:after {
@@ -477,6 +477,87 @@
 .check-box-nine input[type=checkbox]:checked + label:after {
   opacity: 1;
 }
+.check-box-ten {
+  width: 20px;
+  margin: 20px auto;
+  position: relative;
+}
+.check-box-ten label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7), 
+                    1px 1px 1px rgba(255,255,255,0.7);
+  border-radius: 50%;
+  background: linear-gradient(to bottom, rgb(45,45,45) 0%, 
+                                         rgb(75,75,75) 100%);
+  cursor: pointer;
+}
+.check-box-ten label:after {
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 3px solid rgb(0,255,0);
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  transform: rotate(-45deg);
+  content: '';
+}
+.check-box-ten label:hover::after {
+  opacity: 0.5;
+}
+.check-box-ten input[type=checkbox] {
+  visibility: hidden;
+}
+.check-box-ten input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+.check-box-eleven {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+}
+.check-box-eleven label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5);
+  background: rgb(245,245,245);
+  background: linear-gradient(to bottom, rgb(245,245,245) 0%,
+                                         rgb(200,200,200) 40%, 
+                                         rgb(150,150,150) 100%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.check-box-eleven label:after {
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 3px solid rgb(65,65,65);
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  transform: rotate(-45deg);
+  content: '';
+}
+.check-box-eleven label:hover::after {
+  opacity: 0.5;
+}
+.check-box-eleven input[type=checkbox] {
+  visibility: hidden;
+}
+.check-box-eleven input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
     </style>
 
     <section>                                               
@@ -539,6 +620,20 @@
       <div class="check-box-nine">
         <input type="checkbox" value="None" id="checkboxnine" name="check" checked />
         <label for="checkboxnine"></label>
+      </div>
+    </section>
+
+    <section>                                                
+      <div class="check-box-ten">
+        <input type="checkbox" value="None" id="checkboxten" name="check" checked />
+        <label for="checkboxten"></label>
+      </div>
+    </section>
+
+    <section>                                                
+      <div class="check-box-eleven">
+        <input type="checkbox" value="None" id="checkboxeleven" name="check" checked />
+        <label for="checkboxeleven"></label>
       </div>
     </section>
 </body>
